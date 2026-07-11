@@ -28,14 +28,14 @@ const App = () => {
   }
 
   return (
-    <div className='bg-black overflow-auto h-screen text-white p-4'>
+    <div className='bg-purple-400 overflow-auto h-screen text-white p-4'>
       <div className='h-[87%] flex flex-wrap gap-4 p-2'>
         {printUserData}
       </div>
       <div className='flex justify-center gap-6 text-sm items-center p-4'>
         <button
          style={{opacity:index == 1?0.5:1}}
-         className='bg-amber-400 text-black rounded px-4 py-2 font-semibold cursor-pointer active:scale-95'
+         className='bg-violet-600 text-black rounded px-4 py-2 font-semibold cursor-pointer active:scale-95'
          onClick={()=>{
             if(index>1){
               setIndex(index-1)
@@ -47,7 +47,7 @@ const App = () => {
         </button>
         <h4>Page {index}</h4>
         <button
-         className='bg-amber-400 text-black rounded px-4 py-2 font-semibold cursor-pointer active:scale-95'
+         className='bg-violet-600 text-black rounded px-4 py-2 font-semibold cursor-pointer active:scale-95'
          onClick={()=>{
             setIndex(index+1)
             setUserData([])
