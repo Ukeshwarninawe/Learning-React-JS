@@ -1,0 +1,172 @@
+@import "tailwindcss";
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "poppins";
+}
+html,body{
+  height: 100%;
+  width: 100%;
+}
+html,
+body,
+#root{
+    width: 100%;
+    overflow-x: hidden;
+}
+body{
+  background-color: black;
+  color: white;
+  background:radial-gradient(circle at top left,rgb(34, 34, 34),#000);
+}
+h1{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  font-size: 100px;
+  text-decoration: underline;
+  white-space: nowrap;
+}
+
+.nav{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px 40px;
+  font-size: 20px;
+  background: rgba(255,255,255,0.05);
+  backdrop-filter: blur(10px);
+  border-bottom: 1px solid rgba(255,255,255,0.1);
+}
+
+.nav div{
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  width: 100%;
+}
+
+.text{
+  color: black;
+}
+.outer{
+    min-height: 90vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    padding: 50px;
+    gap: 50px;
+    flex-wrap: wrap;
+}
+.part1{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 15px;
+  width: 50%;
+}
+.part2{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.image{
+  width: min(450px, 80vw);
+  height: min(450px, 80vw);
+  object-fit: contain;
+  border-radius: 50%;
+  border: 5px solid white;
+  box-shadow: 0 0 40px rgba(255,255,255,0.3);
+  transition: all 0.5s ease;
+}
+.image:hover{
+    transform: scale(1.05);
+}
+.description{
+  margin-top: 30px;
+}
+
+/* About Page CSS */
+
+.about{
+  height: 100%;
+  width: full;
+  padding: 40px;
+}
+
+.description{
+  height: 200px;
+  width: 100%;
+  font-size: 18px;
+  
+}
+
+.temp1{
+  height: 180px;
+  background-color: rgb(27, 26, 26);
+  border: 2px solid black;
+  border-radius: 20px;
+  padding: 10px;
+  padding-top: 15px;
+}
+
+.temp2{
+  height: 250px;
+  background-color: rgb(27, 26, 26);
+  border: 2px solid black;
+  border-radius: 20px;
+  padding: 10px;
+  padding-top: 15px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.label{
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+  margin-bottom: 10px;
+}
+.temp2 button{
+  height: 100px;
+  width: 200px;
+  background-color: black;
+  color: white;
+  border-radius: 10px;
+}
+.skill{
+  padding: 12px 24px;
+  border-radius: 9999px;
+  background: rgba(168,85,247,0.15);
+  border: 1px solid rgba(168,85,247,0.3);
+  transition: all 0.3s ease;
+}
+
+.skill:hover{
+  transform: scale(1.1);
+  box-shadow: 0 0 20px rgba(168,85,247,0.5);
+}
+@media (max-width: 768px){
+    .outer{
+        flex-direction: column-reverse;
+        text-align: center;
+        padding: 30px 20px;
+    }
+
+    .part1{
+        width: 100%;
+        align-items: center;
+    }
+
+    .part2{
+        width: 100%;
+    }
+}
